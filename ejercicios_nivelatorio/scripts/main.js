@@ -9,14 +9,26 @@ function syncDelay(milliseconds){
     }
    }
    
-  
+  function prueba(){
+    alert("before setTimeout");
+
+    setTimeout(function(){
+            alert("I am setTimeout");
+       },1000); //delay is in milliseconds 
+    
+      alert("after setTimeout");
+  }
    
 
 //1 .Loop de pares
 function loopDePares(num){
+          
     for(let i=0;i<100;i++){
-        const text_label=document.querySelector("#label1");
-        text_label.textContent=text_label.textContent +', '+i;
-        syncDelay(50);
-    }
+    setTimeout(function(){        
+            const text_label=document.querySelector("#label1");
+            text_label.textContent=text_label.textContent +', '+i;           
+        },30); 
+    }    
+    const text_label=document.querySelector("#label1");
+            text_label.textContent="fgfgg"; 
 }
