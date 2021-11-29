@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Plataforma 5 - inicio </title>
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-        <link href = "styles/style.css" rel="stylesheet" type="text/css">
+        <link href = "styles/style.css" rel="stylesheet" type="text/css"> 
     </head>
 
     <body>
-       
-        <h1>Plataforma 5</h1>
-        <h1 id="titulo">esto tambien la cambia?</h1>
+        
+        <div>
+            <h1>Plataforma 5</h1>
+        </div>
+        
+        <h2 id="titulo">Ejercicios Propuestos</h2>
         
       
         <img src="images/logo_plat5.png" alt="Logo plataforma 5 bootcamp image">
@@ -23,12 +25,19 @@
             <div>
             <input type="submit" value="Ejercicio 1" id="ejercicio1" name="LoopDePares" onclick="loopDePares(numero)">
             </div>
-        </form>
-    
-        <script src="scripts/main.js"></script>
-    <p>Ejercicios Propuestos</p>
+            <div class="box">
+                <h2 class="title">Welcome!</h2>
+                <form>
+                    <div class="content">
+                        <textarea id="text" cols="40" rows="10"></textarea>
+                        <hr>
+                        <input type="submit" value="Run" id="button">
+                    </div>
+                </form>
+            </div>
+      
 
    
-   
+    <script src="scripts/main.js"></script>
     </body>
 </html>

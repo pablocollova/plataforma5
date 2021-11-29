@@ -1,3 +1,7 @@
+
+
+
+// Variables
 const button = document.querySelector('#button');
 const text = document.querySelector('#text');
 let secuencia = '0';
@@ -16,7 +20,7 @@ function mostrarOcultarText(event){
 
     if(button.value === 'Run'){
         button.value = 'Stop';
-        repetir = setInterval('mostrarNumeros()', 100); //  velocidad
+        repetir = setInterval('mostrarNumeros()', 100); // Acá cambiale la velocidad
     }else{
         button.value = 'Run';
         text.textContent = '';
@@ -26,6 +30,7 @@ function mostrarOcultarText(event){
 
 
 function mostrarNumeros(){
+    // Si es cero que sólo muestre '0'. Si quitás este if lo primero que te muestra es '0, 1'
     if(i === 0){
         text.textContent = secuencia;
         i++;
@@ -51,3 +56,6 @@ function detenerResetear(){
     repetir = undefined;
     i = 0;
 }
+
+
+////////////////////////////////////////////////////////

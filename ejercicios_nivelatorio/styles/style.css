@@ -1,14 +1,68 @@
-html {
+
+
+
+@font-face {
+  font-family: 'titillium';
+  src: url('../fonts/titillium/TitilliumWeb-Black.ttf');
+}
+
+@font-face{
+  font-family:'ubuntu';
+  src:url('../fonts/ubuntu/Ubuntu-Bold.ttf');
+}
+
+ html {
     font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #00539F;
   }
+
   
   
+  
+  body{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: #008081;
+}
+
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+
+div {
+  float: left;
+width: calc(100% - 20px);
+
+background:RGBA(0,0,0,0);
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 0;
+margin-top: 20px;
+}
+
+
   h1 {
     font-size: 60px;
     text-align: center;
+    font-family: 'titillium';
   }
   
+  h2 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+    font-family:'ubuntu';
+  }
+
   p, li {
     font-size: 16px;
     line-height: 2;
@@ -16,37 +70,63 @@ html {
   }
   
   
-  html {
-    background-color: #00539F;
-  }
   
-  body {
-    width: 600px;
-    margin: 0 auto;
-    background-color: #FF9500;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
-  }
   
-  h1 {
-    margin: 0;
-    padding: 20px 0;
-    color: #00539F;
-    text-shadow: 3px 3px 1px black;
-  }
+ 
   
   img {
     display: block;
     margin: 0 auto;
   }
 
-  div {
-    float: left;
-  width: calc(100% - 20px);
  
-  background:RGBA(0,0,0,0);
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 0;
-  margin-top: 20px;
-  }
+
+  
+hr{
+    border: 1px solid;
+    border-color: #a5a5a5 #d8d8d8 #d8d8d8 #a5a5a5;
+}
+
+  
+.box{
+    padding: 1px;
+    border: 2px solid;
+    border-color: #faf4f4 #1b2828 #1b2828 #faf4f4;
+    background-color: #c0c0c0;
+}
+
+.title{
+    margin: 0;
+    padding: 0 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #808080;
+    color: #bebebe;
+}
+
+.content{
+    padding: 15px;
+}
+
+#text{
+    border: 2px solid;
+    border-color: #1b2828 #faf4f4 #faf4f4 #1b2828
+}
+
+#button{
+    display: block;
+    margin-top: 10px;
+    width: 70px;
+    height: 25.33px;
+    font-family: inherit;
+    font-size: 0.8rem;
+    border: 2px solid;
+    border-color: #faf4f4 #4b4b4b #4b4b4b #faf4f4;
+    background-color: inherit;
+}
+
+#button:active{
+    border-color: #4b4b4b #faf4f4 #faf4f4 #4b4b4b;
+    background-color: inherit;
+    background-color: #b3b3b3;
+}
